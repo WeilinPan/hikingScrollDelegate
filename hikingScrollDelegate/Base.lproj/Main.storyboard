@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,94 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hikingScrollDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="BD3-Y4-hof">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W61-K4-yG8">
+                                        <rect key="frame" x="0.0" y="0.0" width="3375" height="812"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="PHJ-12-dqs">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="bfQ-bt-1Vh">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="Dj7-dI-yqA">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="gj7-0p-HwD">
+                                                <rect key="frame" x="1125" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image5" translatesAutoresizingMaskIntoConstraints="NO" id="eLG-W6-zSN">
+                                                <rect key="frame" x="1500" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image6" translatesAutoresizingMaskIntoConstraints="NO" id="kBE-a9-6c7">
+                                                <rect key="frame" x="1875" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image7" translatesAutoresizingMaskIntoConstraints="NO" id="a4d-2N-XaY">
+                                                <rect key="frame" x="2250" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image8" translatesAutoresizingMaskIntoConstraints="NO" id="0VI-i4-8Gg">
+                                                <rect key="frame" x="2625" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image9" translatesAutoresizingMaskIntoConstraints="NO" id="KsS-8y-k4R">
+                                                <rect key="frame" x="3000" y="0.0" width="375" height="812"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="W61-K4-yG8" firstAttribute="bottom" secondItem="dTe-bl-xay" secondAttribute="bottom" id="Kar-QJ-Fbx"/>
+                                    <constraint firstItem="W61-K4-yG8" firstAttribute="leading" secondItem="dTe-bl-xay" secondAttribute="leading" id="cNB-ge-SmG"/>
+                                    <constraint firstItem="W61-K4-yG8" firstAttribute="trailing" secondItem="dTe-bl-xay" secondAttribute="trailing" id="ilO-BO-88E"/>
+                                    <constraint firstItem="PHJ-12-dqs" firstAttribute="width" secondItem="BD3-Y4-hof" secondAttribute="width" id="jCA-6y-EjN"/>
+                                    <constraint firstItem="W61-K4-yG8" firstAttribute="top" secondItem="dTe-bl-xay" secondAttribute="top" id="o2C-TQ-jtv"/>
+                                    <constraint firstItem="W61-K4-yG8" firstAttribute="height" secondItem="BD3-Y4-hof" secondAttribute="height" id="sNa-nQ-b8W"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dTe-bl-xay"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5Wd-MN-f07"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LGI-kc-hG4">
+                                <rect key="frame" x="168" y="721" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BD3-Y4-hof" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V9E-IB-qIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LGI-kc-hG4" secondAttribute="bottom" constant="20" id="Vhp-Ko-pJH"/>
+                            <constraint firstItem="LGI-kc-hG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjT-z2-gix"/>
+                            <constraint firstItem="BD3-Y4-hof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gFF-6h-idG"/>
+                            <constraint firstAttribute="trailing" secondItem="BD3-Y4-hof" secondAttribute="trailing" id="nx5-sX-vhu"/>
+                            <constraint firstAttribute="bottom" secondItem="BD3-Y4-hof" secondAttribute="bottom" id="xdF-b7-51W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="LGI-kc-hG4" id="Y0A-w0-39j"/>
+                        <outlet property="scrollControl" destination="BD3-Y4-hof" id="SVL-Ed-Ptv"/>
+                        <outlet property="viewOutlet" destination="8bC-Xf-vdC" id="fCl-b4-ny9"/>
+                        <outletCollection property="imageColection" destination="PHJ-12-dqs" collectionClass="NSMutableArray" id="H81-gd-6Bz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="768" height="1024"/>
+        <image name="image2" width="768" height="1024"/>
+        <image name="image3" width="768" height="1024"/>
+        <image name="image4" width="768" height="1024"/>
+        <image name="image5" width="768" height="1024"/>
+        <image name="image6" width="768" height="1024"/>
+        <image name="image7" width="768" height="1024"/>
+        <image name="image8" width="768" height="1024"/>
+        <image name="image9" width="768" height="1024"/>
+    </resources>
 </document>
